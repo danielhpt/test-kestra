@@ -2,6 +2,6 @@ id: coyote_339350
 namespace: prod
 
 tasks:
-  - id: hello
+  - id: hello_test_edit
     type: io.kestra.plugin.core.log.Log
     message: "{{ secret('GITHUB_TOKEN') }}"
