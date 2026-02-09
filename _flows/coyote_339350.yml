@@ -5,3 +5,9 @@ tasks:
   - id: hello_test_edit
     type: io.kestra.plugin.core.log.Log
     message: "{{ secret('GITHUB_TOKEN') }}"
+  - id: test_py
+    type: io.kestra.plugin.scripts.python.Commands
+    namespaceFiles:
+      enabled: true
+    commands:
+      - python test.py
